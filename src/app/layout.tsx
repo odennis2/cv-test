@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Roboto } from 'next/font/google'
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAcs_Xmk1lpdVH7FiPPrYHTWwhAIjKmJgY",
@@ -16,7 +15,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 const roboto = Roboto({
   subsets: ['latin'],
