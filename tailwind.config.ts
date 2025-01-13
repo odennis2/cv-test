@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'main-pattern': "url('./img/background2.png')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
